@@ -1,0 +1,409 @@
+.crud-form-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.crud-form-container {
+  width: 480px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  animation: menuPageCrudFormSlideIn 0.3s ease-out;
+}
+
+@keyframes menuPageCrudFormSlideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.crud-form-header {
+  padding: 10px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crud-form-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.crud-form-close-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.crud-form-close-button:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.crud-form {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.crud-form::-webkit-scrollbar {
+  width: 6px;
+}
+
+.crud-form::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.crud-form::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.crud-form::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.crud-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.crud-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.crud-form-field label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.crud-form-field input,
+.crud-form-field select,
+.crud-form-field textarea {
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.crud-form-field input:focus,
+.crud-form-field select:focus,
+.crud-form-field textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.crud-form-tags-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.crud-form-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 32px;
+  padding: 4px 0;
+}
+
+.crud-form-tag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #f3f4f6;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.crud-form-tag button {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crud-form-image-upload-area {
+  border: 1px dashed #d1d5db;
+  border-radius: 6px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #f9fafb;
+}
+
+.crud-form-image-upload-area:hover {
+  border-color: #3b82f6;
+  background-color: #f0f7ff;
+}
+
+.crud-form-image-upload-area p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.crud-form-image-preview-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.crud-form-image-preview {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.crud-form-image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.crud-form-remove-image {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ef4444;
+}
+
+.crud-form-add-more-images {
+  aspect-ratio: 1;
+  border: 1px dashed #d1d5db;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.2s;
+}
+
+.crud-form-add-more-images:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.crud-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.crud-form-cancel-button,
+.crud-form-submit-button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.crud-form-cancel-button {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.crud-form-cancel-button:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.crud-form-submit-button {
+  background-color: #3b82f6;
+  border: none;
+  color: white;
+}
+
+.crud-form-submit-button:hover {
+  background-color: #2563eb;
+}
+
+@media (max-width: 640px) {
+  .crud-form-container {
+    width: 100%;
+  }
+
+  .crud-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dark .crud-form-container {
+  background-color: #111827;
+  color: #e5e7eb;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dark .crud-form-header {
+  border-bottom: 1px solid #1f2937;
+}
+
+.dark .crud-form-header h2 {
+  color: #f9fafb;
+}
+
+.dark .crud-form-close-button {
+  color: #d1d5db;
+}
+
+.dark .crud-form-close-button:hover {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+.dark .crud-form::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark .crud-form::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+.dark .crud-form::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+.dark .crud-form-field label {
+  color: #e5e7eb;
+}
+
+.dark .crud-form-field input,
+.dark .crud-form-field select,
+.dark .crud-form-field textarea {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+}
+
+.dark .crud-form-field input:focus,
+.dark .crud-form-field select:focus,
+.dark .crud-form-field textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.crud-form-field textarea {
+  resize: vertical; /* Allow only vertical resizing */
+  min-height: 80px; /* Set a reasonable minimum height */
+  max-height: 300px; /* Optional: Limit max height */
+}
+
+.dark .crud-form-tag {
+  background-color: #374151;
+  color: #e5e7eb;
+}
+
+.dark .crud-form-tag button {
+  color: #d1d5db;
+}
+
+.dark .crud-form-image-upload-area {
+  border: 1px dashed #374151;
+  background-color: #1f2937;
+}
+
+.dark .crud-form-image-upload-area:hover {
+  border-color: #3b82f6;
+  background-color: #374151;
+}
+
+.dark .crud-form-remove-image {
+  background-color: rgba(31, 41, 55, 0.9);
+  color: #f87171;
+}
+
+.dark .crud-form-add-more-images {
+  border: 1px dashed #374151;
+  color: #d1d5db;
+}
+
+.dark .crud-form-add-more-images:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.dark .crud-form-actions {
+  border-top: 1px solid #374151;
+}
+
+.dark .crud-form-cancel-button {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+}
+
+.dark .crud-form-cancel-button:hover {
+  background-color: #374151;
+  border-color: #6b7280;
+}
+
+.dark .crud-form-submit-button {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.dark .crud-form-submit-button:hover {
+  background-color: #1d4ed8;
+}

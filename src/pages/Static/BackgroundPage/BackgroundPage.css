@@ -1,0 +1,38 @@
+.background-vector-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #1e2a47;
+}
+
+.background-vector-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1000;
+  background-image: url('../../../assets/Restominder/BackgroundVector.png'); /* Use background-image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .background-vector-image {
+    background-size: 200%;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-vector-image {
+    background-size: 300%;
+  }
+}

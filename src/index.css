@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+/* index.css or App.css */
+.Toastify__toast-container {
+  z-index: 9999; /* Or another high value */
+}
+
+.dark {
+  background-color: rgb(26, 31, 44);
+}

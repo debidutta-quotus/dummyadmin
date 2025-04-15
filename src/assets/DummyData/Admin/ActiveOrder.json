@@ -1,0 +1,222 @@
+[
+  {
+    "order_id": "OD001",
+    "outlet": "Burger Haven - Greater Manchester",
+    "pos_system": "Toast POS",
+    "delivery_partner": "Zomato",
+    "customer": "John Doe",
+    "total_amount": "$44",
+    "status": "Preparing",
+    "mode_of_payment": "Online",
+    "delivery_details": "42 Portland Street, M1 6DL, Greater Manchester"
+  },
+  {
+    "order_id": "OD002",
+    "outlet": "Pizza Palace - London",
+    "pos_system": "Square POS",
+    "delivery_partner": "Uber Eats",
+    "customer": "Jane Smith",
+    "total_amount": "$32",
+    "status": "Out for delivery",
+    "mode_of_payment": "Online",
+    "delivery_details": "15 Oxford Road, NW1 5LD, London"
+  },
+  {
+    "order_id": "OD003",
+    "outlet": "Taco Town - Birmingham",
+    "pos_system": "Clover POS",
+    "delivery_partner": "Swiggy",
+    "customer": "Mark Johnson",
+    "total_amount": "$27",
+    "status": "Pending",
+    "mode_of_payment": "COD",
+    "delivery_details": "8 Hill Street, B5 4UB, Birmingham"
+  },
+  {
+    "order_id": "OD004",
+    "outlet": "Sushi Central - Manchester",
+    "pos_system": "Revel POS",
+    "delivery_partner": "Food Panda",
+    "customer": "Lucy Brown",
+    "total_amount": "$50",
+    "status": "Delivered",
+    "mode_of_payment": "Online",
+    "delivery_details": "22 Market Street, M2 1PN, Manchester"
+  },
+  {
+    "order_id": "OD005",
+    "outlet": "Burger Haven - Greater Manchester",
+    "pos_system": "Toast POS",
+    "delivery_partner": "Uber Eats",
+    "customer": "Michael Green",
+    "total_amount": "$41",
+    "status": "Preparing",
+    "mode_of_payment": "Online",
+    "delivery_details": "42 Portland Street, M1 6DL, Greater Manchester"
+  },
+  {
+    "order_id": "OD006",
+    "outlet": "Pasta Point - Leeds",
+    "pos_system": "Lightspeed POS",
+    "delivery_partner": "Swiggy",
+    "customer": "Sophia Wilson",
+    "total_amount": "$29",
+    "status": "Out for delivery",
+    "mode_of_payment": "COD",
+    "delivery_details": "30 Victoria Road, LS1 3EX, Leeds"
+  },
+  {
+    "order_id": "OD007",
+    "outlet": "Sandwich Stop - Liverpool",
+    "pos_system": "Clover POS",
+    "delivery_partner": "Zomato",
+    "customer": "Daniel White",
+    "total_amount": "$19",
+    "status": "Pending",
+    "mode_of_payment": "Online",
+    "delivery_details": "12 Queen Square, L1 1RH, Liverpool"
+  },
+  {
+    "order_id": "OD008",
+    "outlet": "Noodle Nook - Glasgow",
+    "pos_system": "Revel POS",
+    "delivery_partner": "Food Panda",
+    "customer": "Emma Harris",
+    "total_amount": "$37",
+    "status": "Delivered",
+    "mode_of_payment": "Online",
+    "delivery_details": "45 Argyle Street, G2 8AH, Glasgow"
+  },
+  {
+    "order_id": "OD009",
+    "outlet": "Curry Corner - London",
+    "pos_system": "Toast POS",
+    "delivery_partner": "Uber Eats",
+    "customer": "James Lee",
+    "total_amount": "$55",
+    "status": "Preparing",
+    "mode_of_payment": "Online",
+    "delivery_details": "10 Baker Street, W1U 6TZ, London"
+  },
+  {
+    "order_id": "OD010",
+    "outlet": "Pizza Palace - London",
+    "pos_system": "Square POS",
+    "delivery_partner": "Zomato",
+    "customer": "Ella King",
+    "total_amount": "$30",
+    "status": "Out for delivery",
+    "mode_of_payment": "COD",
+    "delivery_details": "21 Camden Road, NW1 9HD, London"
+  },
+  {
+    "order_id": "OD011",
+    "outlet": "Pizza Corner - Downtown",
+    "pos_system": "Square POS",
+    "delivery_partner": "Uber Eats",
+    "customer": "Alice Smith",
+    "total_amount": "$30",
+    "status": "Preparing",
+    "mode_of_payment": "Online",
+    "delivery_details": "10 Baker Street, NY 10001"
+  },
+  {
+    "order_id": "OD012",
+    "outlet": "Sushi Hub - Uptown",
+    "pos_system": "Clover POS",
+    "delivery_partner": "DoorDash",
+    "customer": "Bob Johnson",
+    "total_amount": "$25",
+    "status": "Out for delivery",
+    "mode_of_payment": "COD",
+    "delivery_details": "22 Oak Avenue, NY 10002"
+  },
+  {
+    "order_id": "OD013",
+    "outlet": "Taco Fiesta - Midtown",
+    "pos_system": "Revel POS",
+    "delivery_partner": "Zomato",
+    "customer": "Charlie Brown",
+    "total_amount": "$18",
+    "status": "Pending",
+    "mode_of_payment": "Online",
+    "delivery_details": "8 Pine Street, NY 10003"
+  },
+  {
+    "order_id": "OD014",
+    "outlet": "Burger Express - Westside",
+    "pos_system": "Toast POS",
+    "delivery_partner": "Food Panda",
+    "customer": "David Wilson",
+    "total_amount": "$22",
+    "status": "Delivered",
+    "mode_of_payment": "Online",
+    "delivery_details": "15 Maple Drive, NY 10004"
+  },
+  {
+    "order_id": "OD015",
+    "outlet": "Pasta House - Eastside",
+    "pos_system": "Square POS",
+    "delivery_partner": "Swiggy",
+    "customer": "Eve Adams",
+    "total_amount": "$27",
+    "status": "Preparing",
+    "mode_of_payment": "COD",
+    "delivery_details": "3 Cedar Lane, NY 10005"
+  },
+  {
+    "order_id": "OD016",
+    "outlet": "Healthy Bites - Downtown",
+    "pos_system": "Clover POS",
+    "delivery_partner": "Uber Eats",
+    "customer": "Frank Thomas",
+    "total_amount": "$35",
+    "status": "Out for delivery",
+    "mode_of_payment": "Online",
+    "delivery_details": "6 Birch Road, NY 10006"
+  },
+  {
+    "order_id": "OD017",
+    "outlet": "Steak House - Uptown",
+    "pos_system": "Revel POS",
+    "delivery_partner": "DoorDash",
+    "customer": "Grace White",
+    "total_amount": "$50",
+    "status": "Pending",
+    "mode_of_payment": "COD",
+    "delivery_details": "12 Walnut Street, NY 10007"
+  },
+  {
+    "order_id": "OD018",
+    "outlet": "Vegan Delights - Midtown",
+    "pos_system": "Toast POS",
+    "delivery_partner": "Zomato",
+    "customer": "Henry Martin",
+    "total_amount": "$20",
+    "status": "Preparing",
+    "mode_of_payment": "Online",
+    "delivery_details": "30 Chestnut Road, NY 10008"
+  },
+  {
+    "order_id": "OD019",
+    "outlet": "BBQ Grill - Westside",
+    "pos_system": "Square POS",
+    "delivery_partner": "Food Panda",
+    "customer": "Isabella Carter",
+    "total_amount": "$40",
+    "status": "Delivered",
+    "mode_of_payment": "Online",
+    "delivery_details": "17 Elm Avenue, NY 10009"
+  },
+  {
+    "order_id": "OD020",
+    "outlet": "Seafood Shack - Eastside",
+    "pos_system": "Clover POS",
+    "delivery_partner": "Swiggy",
+    "customer": "Jack Harris",
+    "total_amount": "$45",
+    "status": "Out for delivery",
+    "mode_of_payment": "COD",
+    "delivery_details": "50 Redwood Street, NY 10010"
+  }
+]

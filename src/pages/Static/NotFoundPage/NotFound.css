@@ -1,0 +1,147 @@
+/* NotFound.css */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f8f8; /* Light Gray Background */
+  color: #333; /* Dark Gray Text */
+  overflow: hidden;
+}
+
+.not-found-content {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff; /* White Background */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: 90%;
+  max-width: 500px;
+}
+
+.not-found-title {
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  color: #e23744; /* Zomato Red Title */
+}
+
+.not-found-subtitle {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.not-found-message {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+
+.not-found-go-home-button {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #e23744; /* Zomato Red Button */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.not-found-go-home-button:hover {
+  background-color: #d11a2a; /* Darker Red Hover */
+}
+
+.not-found-illustration {
+  position: relative;
+  margin-top: 30px;
+}
+
+.not-found-illustration-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff; /* White Background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-illustration-face {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f0f0f0; /* Light Gray Face */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-illustration-eyes {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.not-found-illustration-eye {
+  width: 12px;
+  height: 12px;
+  background-color: #333; /* Dark Gray Eyes */
+  border-radius: 50%;
+}
+
+.not-found-illustration-mouth {
+  width: 30px;
+  height: 8px;
+  background-color: #333; /* Dark Gray Mouth */
+  border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .not-found-content {
+    padding: 30px;
+  }
+
+  .not-found-title {
+    font-size: 3em;
+  }
+
+  .not-found-subtitle {
+    font-size: 1.5em;
+  }
+
+  .not-found-message {
+    font-size: 0.9em;
+  }
+
+  .not-found-illustration-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .not-found-illustration-face {
+    width: 70px;
+    height: 70px;
+  }
+
+  .not-found-illustration-eyes {
+    width: 40px;
+  }
+
+  .not-found-illustration-eye {
+    width: 10px;
+    height: 10px;
+  }
+
+  .not-found-illustration-mouth {
+    width: 25px;
+    height: 6px;
+  }
+}

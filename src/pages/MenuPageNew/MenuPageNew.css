@@ -1,0 +1,410 @@
+.menu-page-resto-loading,
+.menu-page-resto-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.menu-page-resto-error {
+  color: #ef4444;
+  text-align: center;
+}
+
+.menu-page-resto-error button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu-page-resto-error button:hover {
+  background-color: #2563eb;
+}
+
+.menu-page-resto-empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+.dark .menu-page-resto-empty-state {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+.menu-page-resto-container {
+  display: flex;
+  padding: 0px 40px;
+  background-color: rgb(237, 241, 243);
+  /* height: calc(100vh - 70px); */
+  overflow: hidden;
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.menu-page-resto-category-sidebar-and-menu-list-container {
+  display: flex;
+  gap: 2rem;
+  max-height: calc(90vh - 70px);
+}
+
+.menu-page-resto-header-container h1 {
+  font-size: 20px;
+}
+
+.dark .menu-page-resto-header-container h1 {
+  font-size: 20px;
+  color: #f3f4f6;
+}
+
+/* Category Sidebar */
+.menu-page-resto-category-sidebar {
+  width: 220px;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-height: calc(100vh - 90px);
+  flex-shrink: 0;
+}
+
+.menu-page-resto-category-title {
+  color: #1a1a1a;
+  margin-bottom: 0rem;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  background: white;
+  padding-bottom: 0rem;
+  z-index: 1;
+  padding-left: 1rem;
+}
+
+.menu-page-resto-category-list {
+  list-style: none;
+  max-height: calc(70vh);
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.menu-page-resto-category-list::-webkit-scrollbar {
+  width: 2px;
+}
+
+.menu-page-resto-category-list::-webkit-scrollbar-track,
+.menu-page-resto-list::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.menu-page-resto-category-list::-webkit-scrollbar-thumb,
+.menu-page-resto-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.menu-page-resto-category-list::-webkit-scrollbar-thumb:hover,
+.menu-page-resto-list::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.menu-page-resto-category-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+  transition: all 0.05s;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgb(236, 236, 236);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.menu-page-resto-category-name-container {
+  padding-bottom: 4px;
+}
+
+.menu-page-resto-category-item:hover {
+  color: #2563eb;
+  transform: scale(1.02);
+}
+
+.menu-page-resto-category-item.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Menu Content */
+.menu-page-resto-content {
+  display: flex;
+  flex-direction: column;
+  height: calc(85vh - 40px);
+  position: relative;
+  overflow-y: auto;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.menu-page-resto-header-title-add-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-page-resto-add-menu-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.menu-page-resto-add-menu-button {
+  background-color: #4299e1;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.menu-page-resto-add-menu-button:hover {
+  background-color: #3182ce;
+}
+
+/* Menu List Container */
+.menu-page-resto-list {
+  flex: 1;
+  /* padding-right: 1rem; */
+}
+
+.menu-page-resto-list > * {
+  margin-bottom: 1rem;
+}
+
+.menu-page-resto-list > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Dropdown for Mobile */
+.menu-page-resto-category-dropdown {
+  display: none;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.menu-page-resto-category-dropdown label {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  margin-right: 8px;
+}
+
+.menu-page-resto-category-dropdown select {
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Custom Scrollbar Styles */
+.menu-page-resto-category-sidebar::-webkit-scrollbar,
+.menu-page-resto-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.menu-page-resto-category-sidebar::-webkit-scrollbar-track,
+.menu-page-resto-content::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.menu-page-resto-category-sidebar::-webkit-scrollbar-thumb,
+.menu-page-resto-content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.menu-page-resto-category-sidebar::-webkit-scrollbar-thumb:hover,
+.menu-page-resto-content::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@media (max-width: 1050px) {
+  .menu-page-resto-category-sidebar {
+    display: none;
+  }
+
+  .menu-page-resto-category-dropdown {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  .menu-page-resto-category-dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  .menu-page-resto-category-dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  .menu-page-resto-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-page-resto-content {
+    height: calc(80vh);
+  }
+
+  .menu-page-resto-list {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-page-resto-container {
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .menu-page-resto-category-sidebar {
+    display: none;
+  }
+
+  .menu-page-resto-category-dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  .menu-page-resto-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-page-resto-content {
+    height: calc(100vh - 2rem);
+  }
+
+  .menu-page-resto-list {
+    padding-right: 0;
+  }
+}
+
+/* Dark Mode Styles */
+.dark .menu-page-resto-container {
+  background-color: rgb(26, 31, 44);
+}
+
+.dark .menu-page-resto-category-sidebar {
+  background: #1f2937;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark .menu-page-resto-category-title {
+  color: #f3f4f6;
+  background: #1f2937;
+}
+
+.dark .menu-page-resto-category-list {
+  color: #f3f4f6;
+}
+
+.dark .menu-page-resto-category-item {
+  color: #9ca3af;
+  border: none;
+  border-bottom: 1px solid rgb(48, 48, 48);
+}
+
+.dark .menu-page-resto-category-item:hover {
+  color: #4299e1;
+}
+
+.dark .menu-page-resto-category-item.active {
+  color: #4299e1;
+  font-weight: 600;
+}
+
+.dark .menu-page-resto-content {
+  background-color: rgb(26, 31, 44);
+}
+
+.dark .menu-page-resto-header {
+  background: rgb(26, 31, 44);
+}
+
+.dark .menu-page-resto-header h1 {
+  color: #f3f4f6;
+}
+
+.dark .menu-page-resto-list {
+  color: #f3f4f6;
+}
+
+.dark .menu-page-resto-category-dropdown label {
+  color: #9ca3af;
+}
+
+.dark .menu-page-resto-category-dropdown select {
+  background-color: #1f2937;
+  color: #9ca3af;
+  border: 1px solid #374151;
+}
+
+.dark .menu-page-resto-category-sidebar::-webkit-scrollbar-track,
+.dark .menu-page-resto-content::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark .menu-page-resto-category-sidebar::-webkit-scrollbar-thumb,
+.dark .menu-page-resto-content::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+.dark .menu-page-resto-category-sidebar::-webkit-scrollbar-thumb:hover,
+.dark .menu-page-resto-content::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+.dark .menu-page-resto-category-list::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark .menu-page-resto-category-list::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+.dark .menu-page-resto-category-list::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+.dark .menu-page-resto-add-menu-button {
+  background-color: #3182ce;
+}
+
+.dark .menu-page-resto-add-menu-button:hover {
+  background-color: #2c79c5;
+}

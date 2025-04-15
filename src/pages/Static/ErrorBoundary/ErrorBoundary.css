@@ -1,0 +1,233 @@
+/* common/WentWrong/WentWrong.css */
+.dark .went-wrong-container {
+  background-color: rgb(26, 31, 44); /* Dark background */
+}
+
+.dark .went-wrong-content {
+  background-color: #1f2937; /* Darker card background */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Dark shadow */
+}
+
+.dark .went-wrong-icon {
+  color: #f9a825; /* Keep the warning/retry color */
+}
+
+.dark .went-wrong-title {
+  color: #f3f4f6; /* Light text */
+}
+
+.dark .went-wrong-subtitle {
+  color: #9ca3af; /* Gray text */
+}
+
+.dark .went-wrong-button {
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+
+.dark .try-again-button {
+  background-color: #374151;
+}
+
+.dark .try-again-button:hover {
+  background-color: #4b5563;
+}
+
+.dark .go-home-button {
+  background-color: #374151;
+}
+
+.dark .go-home-button:hover {
+  background-color: #4b5563;
+}
+
+.dark .loading-text-below {
+  color: #03a9f4; /* Keep the loading text color */
+}
+
+/* Rest of your existing CSS for layout and responsiveness */
+.went-wrong-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f5f5; /* Default light background */
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.went-wrong-content {
+  background-color: #ffffff; /* Default light card background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Default light shadow */
+  padding: 32px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  transition: height 0.3s ease-in-out;
+  height: auto;
+  overflow: hidden;
+}
+
+.went-wrong-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.went-wrong-icon {
+  color: #f9a825;
+  transition: transform 0.2s ease-in-out;
+}
+
+.rotating-icon {
+  margin-bottom: 10px;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text-below {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #03a9f4;
+  font-weight: bold;
+}
+
+.went-wrong-title {
+  color: #333;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.went-wrong-subtitle {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.went-wrong-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.went-wrong-button {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+}
+
+.try-again-button {
+  background-color: #e0f2f7;
+  color: #03a9f4;
+  border-color: #b3e5fc;
+}
+
+.try-again-button:hover {
+  background-color: #b3e5fc;
+  border-color: #03a9f4;
+}
+
+.go-home-button {
+  background-color: #f5f5f5;
+  color: #757575;
+  border-color: #e0e0e0;
+}
+
+.go-home-button:hover {
+  background-color: #e0e0e0;
+  border-color: #757575;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .went-wrong-content {
+    padding: 24px;
+  }
+
+  .went-wrong-icon-container {
+    margin-bottom: 12px;
+  }
+
+  .went-wrong-icon {
+    size: 36px;
+  }
+
+  .loading-text-below {
+    font-size: 0.8rem;
+    margin-top: 6px;
+  }
+
+  .went-wrong-title {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+  }
+
+  .went-wrong-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+  }
+
+  .went-wrong-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .went-wrong-button {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .went-wrong-content {
+    padding: 16px;
+  }
+
+  .went-wrong-icon-container {
+    margin-bottom: 8px;
+  }
+
+  .went-wrong-icon {
+    size: 28px;
+  }
+
+  .loading-text-below {
+    font-size: 0.7rem;
+    margin-top: 4px;
+  }
+
+  .went-wrong-title {
+    font-size: 1.25rem;
+  }
+
+  .went-wrong-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+
+  .went-wrong-button {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+}

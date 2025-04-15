@@ -1,0 +1,257 @@
+.pos-integration-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dark .pos-integration-card {
+  background: #1f2937;
+  border: 1px solid #374151;
+}
+
+.pos-integration-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pos-integration-card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
+}
+
+.pos-integration-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 200px;
+}
+
+.pos-integration-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pos-integration-logo-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pos-integration-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pos-integration-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pos-integration-header-name-storeid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pos-integration-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1c2e;
+  margin: 0;
+}
+
+.dark .pos-integration-name {
+  color: #f3f4f6;
+}
+
+.pos-integration-id {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.dark .pos-integration-id {
+  color: #9ca3af;
+}
+
+.pos-integration-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-top: 4px;
+  width: fit-content;
+}
+
+.pos-integration-status.active {
+  background-color: #e6f7ee;
+  color: #10b981;
+}
+
+.pos-integration-status.inactive {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.dark .pos-integration-status.active {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.dark .pos-integration-status.inactive {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.pos-integration-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.pos-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pos-detail-label {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.dark .pos-detail-label {
+  color: #9ca3af;
+}
+
+.pos-detail-value {
+  font-size: 14px;
+  color: #1a1c2e;
+  font-weight: 500;
+}
+
+.dark .pos-detail-value {
+  color: #f3f4f6;
+}
+
+.pos-connection-type {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: #f8fafc;
+  color: #334155;
+  width: fit-content;
+}
+
+.dark .pos-connection-type {
+  background-color: #374151;
+  color: #e5e7eb;
+}
+
+.pos-sync-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pos-sync-date {
+  font-size: 14px;
+  color: #1a1c2e;
+  font-weight: 500;
+}
+
+.dark .pos-sync-date {
+  color: #f3f4f6;
+}
+
+.pos-sync-time {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.dark .pos-sync-time {
+  color: #9ca3af;
+}
+
+.pos-revenue {
+  font-weight: 600;
+  color: #10b981;
+}
+
+.pos-error-rate {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.pos-error-rate.low {
+  background-color: #e6f7ee;
+  color: #10b981;
+}
+
+.pos-error-rate.high {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.dark .pos-error-rate.low {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.dark .pos-error-rate.high {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .pos-integration-card {
+    padding: 16px;
+  }
+
+  .pos-integration-card-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .pos-integration-card-left {
+    min-width: unset;
+  }
+
+  .pos-integration-details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .pos-detail-item {
+    min-width: unset;
+  }
+
+  .pos-integration-header-info {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .pos-integration-status {
+    padding: 0px 20px;
+  }
+}

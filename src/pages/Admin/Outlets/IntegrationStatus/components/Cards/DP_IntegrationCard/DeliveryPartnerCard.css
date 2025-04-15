@@ -1,0 +1,257 @@
+.delivery-partner-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dark .delivery-partner-card {
+  background: #1f2937;
+  border: 1px solid #374151;
+}
+
+.delivery-partner-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-partner-card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
+}
+
+.delivery-partner-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 200px;
+}
+
+.delivery-partner-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.delivery-partner-logo-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.delivery-partner-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delivery-partner-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.delivery-partner-header-name-storeid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-partner-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1c2e;
+  margin: 0;
+}
+
+.dark .delivery-partner-name {
+  color: #f3f4f6;
+}
+
+.delivery-partner-id {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.dark .delivery-partner-id {
+  color: #9ca3af;
+}
+
+.delivery-partner-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-top: 4px;
+  width: fit-content;
+}
+
+.delivery-partner-status.active {
+  background-color: #e6f7ee;
+  color: #10b981;
+}
+
+.delivery-partner-status.inactive {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.dark .delivery-partner-status.active {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.dark .delivery-partner-status.inactive {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.delivery-partner-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.delivery-partner-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.delivery-partner-detail-label {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.dark .delivery-partner-detail-label {
+  color: #9ca3af;
+}
+
+.delivery-partner-detail-value {
+  font-size: 14px;
+  color: #1a1c2e;
+  font-weight: 500;
+}
+
+.dark .delivery-partner-detail-value {
+  color: #f3f4f6;
+}
+
+.delivery-partner-connection-type {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: #f8fafc;
+  color: #334155;
+  width: fit-content;
+}
+
+.dark .delivery-partner-connection-type {
+  background-color: #374151;
+  color: #e5e7eb;
+}
+
+.delivery-partner-sync-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.delivery-partner-sync-date {
+  font-size: 14px;
+  color: #1a1c2e;
+  font-weight: 500;
+}
+
+.dark .delivery-partner-sync-date {
+  color: #f3f4f6;
+}
+
+.delivery-partner-sync-time {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.dark .delivery-partner-sync-time {
+  color: #9ca3af;
+}
+
+.delivery-partner-revenue {
+  font-weight: 600;
+  color: #10b981;
+}
+
+.delivery-partner-error-rate {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.delivery-partner-error-rate.low {
+  background-color: #e6f7ee;
+  color: #10b981;
+}
+
+.delivery-partner-error-rate.high {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.dark .delivery-partner-error-rate.low {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.dark .delivery-partner-error-rate.high {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .delivery-partner-card {
+    padding: 16px;
+  }
+
+  .delivery-partner-card-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .delivery-partner-card-left {
+    min-width: unset;
+  }
+
+  .delivery-partner-details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .delivery-partner-detail-item {
+    min-width: unset;
+  }
+
+  .delivery-partner-header-info {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .delivery-partner-status {
+    padding: 0px 20px;
+  }
+}

@@ -1,0 +1,128 @@
+.order-card-accepted-order {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.order-card-accepted-order:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.02);
+}
+
+.order-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.order-id {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 8px;
+}
+
+.order-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.order-time {
+  font-size: 12px;
+  color: #6e6e73;
+}
+
+.customer-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1d1d1f;
+}
+
+.order-details {
+  background-color: #f9f9fb;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  color: #6e6e73;
+}
+
+.detail-value {
+  font-weight: 500;
+  color: #1d1d1f;
+}
+
+.order-items {
+  margin-bottom: 16px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.item-name {
+  font-size: 14px;
+  color: #1d1d1f;
+}
+
+.item-quantity {
+  font-size: 14px;
+  color: #6e6e73;
+  font-weight: 500;
+}
+
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1d1d1f;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.status-tag {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.status-preparing {
+  background-color: #ffcc00;
+  color: #663399;
+}
+
+.status-completed {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.status-dispatched {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.status-pending {
+  background-color: #6c757d;
+  color: #ffffff;
+}

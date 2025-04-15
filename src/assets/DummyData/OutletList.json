@@ -1,0 +1,220 @@
+{
+  "outlets": [
+    {
+      "id": "1",
+      "storeName": "Pizza Palace",
+      "storeId": "PP-2021-001",
+      "type": "Restaurant",
+      "registrationDate": "2021-03-10",
+      "posSystem": "Web-Based",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "storeName": "Sushi Spot",
+      "storeId": "SS-2021-002",
+      "type": "Restaurant",
+      "registrationDate": "2021-04-22",
+      "posSystem": "Mobile App",
+      "status": "inactive"
+    },
+    {
+      "id": "3",
+      "storeName": "Coffee Corner",
+      "storeId": "CC-2021-003",
+      "type": "Cafe",
+      "registrationDate": "2021-05-15",
+      "posSystem": "Tablet",
+      "status": "active"
+    },
+    {
+      "id": "4",
+      "storeName": "Taco Time",
+      "storeId": "TT-2021-004",
+      "type": "Restaurant",
+      "registrationDate": "2021-06-01",
+      "posSystem": "Web-Based",
+      "status": "inactive"
+    },
+    {
+      "id": "5",
+      "storeName": "Ice Cream Dreams",
+      "storeId": "ID-2021-005",
+      "type": "Dessert",
+      "registrationDate": "2021-07-20",
+      "posSystem": "Mobile App",
+      "status": "active"
+    },
+    {
+      "id": "6",
+      "storeName": "Noodle Nation",
+      "storeId": "NN-2021-006",
+      "type": "Restaurant",
+      "registrationDate": "2021-08-12",
+      "posSystem": "Tablet",
+      "status": "inactive"
+    },
+    {
+      "id": "7",
+      "storeName": "Bakery Bliss",
+      "storeId": "BB-2021-007",
+      "type": "Bakery",
+      "registrationDate": "2021-09-05",
+      "posSystem": "Web-Based",
+      "status": "active"
+    },
+    {
+      "id": "8",
+      "storeName": "Juice Junction",
+      "storeId": "JJ-2021-008",
+      "type": "Cafe",
+      "registrationDate": "2021-10-18",
+      "posSystem": "Mobile App",
+      "status": "inactive"
+    },
+    {
+      "id": "9",
+      "storeName": "Steak House",
+      "storeId": "SH-2021-009",
+      "type": "Restaurant",
+      "registrationDate": "2021-11-25",
+      "posSystem": "Tablet",
+      "status": "active"
+    },
+    {
+      "id": "10",
+      "storeName": "Smoothie Stop",
+      "storeId": "ST-2021-010",
+      "type": "Cafe",
+      "registrationDate": "2021-12-08",
+      "posSystem": "Web-Based",
+      "status": "inactive"
+    },
+    {
+      "id": "11",
+      "storeName": "Pasta Place",
+      "storeId": "PP-2022-011",
+      "type": "Restaurant",
+      "registrationDate": "2022-01-15",
+      "posSystem": "Mobile App",
+      "status": "active"
+    },
+    {
+      "id": "12",
+      "storeName": "Donut Delight",
+      "storeId": "DD-2022-012",
+      "type": "Dessert",
+      "registrationDate": "2022-02-28",
+      "posSystem": "Tablet",
+      "status": "inactive"
+    },
+    {
+      "id": "13",
+      "storeName": "Curry Kingdom",
+      "storeId": "CK-2022-013",
+      "type": "Restaurant",
+      "registrationDate": "2022-03-12",
+      "posSystem": "Web-Based",
+      "status": "active"
+    },
+    {
+      "id": "14",
+      "storeName": "Bagel Boutique",
+      "storeId": "BB-2022-014",
+      "type": "Bakery",
+      "registrationDate": "2022-04-05",
+      "posSystem": "Mobile App",
+      "status": "inactive"
+    },
+    {
+      "id": "15",
+      "storeName": "Waffle World",
+      "storeId": "WW-2022-015",
+      "type": "Dessert",
+      "registrationDate": "2022-05-20",
+      "posSystem": "Tablet",
+      "status": "active"
+    },
+    {
+      "id": "16",
+      "storeName": "Salad Station",
+      "storeId": "SS-2022-016",
+      "type": "Cafe",
+      "registrationDate": "2022-06-18",
+      "posSystem": "Web-Based",
+      "status": "inactive"
+    },
+    {
+      "id": "17",
+      "storeName": "Burger Barn",
+      "storeId": "BB-2022-017",
+      "type": "Restaurant",
+      "registrationDate": "2022-07-01",
+      "posSystem": "Mobile App",
+      "status": "active"
+    },
+    {
+      "id": "18",
+      "storeName": "Pie Paradise",
+      "storeId": "PP-2022-018",
+      "type": "Dessert",
+      "registrationDate": "2022-08-10",
+      "posSystem": "Tablet",
+      "status": "inactive"
+    },
+    {
+      "id": "19",
+      "storeName": "Ramen Road",
+      "storeId": "RR-2022-019",
+      "type": "Restaurant",
+      "registrationDate": "2022-09-22",
+      "posSystem": "Web-Based",
+      "status": "active"
+    },
+    {
+      "id": "20",
+      "storeName": "Crepe Corner",
+      "storeId": "CC-2022-020",
+      "type": "Cafe",
+      "registrationDate": "2022-10-15",
+      "posSystem": "Mobile App",
+      "status": "inactive"
+    },
+    {
+      "id": "21",
+      "storeName": "Tapas Tavern",
+      "storeId": "TT-2022-021",
+      "type": "Restaurant",
+      "registrationDate": "2022-11-08",
+      "posSystem": "Tablet",
+      "status": "active"
+    },
+    {
+      "id": "22",
+      "storeName": "Muffin Mansion",
+      "storeId": "MM-2022-022",
+      "type": "Bakery",
+      "registrationDate": "2022-12-01",
+      "posSystem": "Web-Based",
+      "status": "inactive"
+    },
+    {
+      "id": "23",
+      "storeName": "Gelato Garden",
+      "storeId": "GG-2023-023",
+      "type": "Dessert",
+      "registrationDate": "2023-01-20",
+      "posSystem": "Mobile App",
+      "status": "active"
+    },
+    {
+      "id": "24",
+      "storeName": "Soup Spot",
+      "storeId": "SP-2023-024",
+      "type": "Cafe",
+      "registrationDate": "2023-02-12",
+      "posSystem": "Tablet",
+      "status": "inactive"
+    }
+  ]
+}

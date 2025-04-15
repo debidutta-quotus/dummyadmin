@@ -1,0 +1,217 @@
+.admin-active-order-page-container {
+  padding: 0px 40px;
+  /* min-height: 100vh; */
+}
+
+.admin-active-order-page-container h1 {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.admin-active-order-page-table-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+  max-height: calc(70vh - 20px);
+  animation: AdminActiveOrderSlideInUp 0.3s ease-out;
+}
+
+.admin-active-order-page-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.admin-active-order-page-table th,
+.admin-active-order-page-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-active-order-page-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.admin-active-order-page-table td {
+  color: #2d3748;
+}
+
+/* .admin-active-order-page-table th:nth-child(1),
+  .admin-active-order-page-table td:nth-child(1) {
+    width: 90px;
+    padding-left: 20px;
+  } */
+
+/* .admin-active-order-page-table th:nth-child(2),
+  .admin-active-order-page-table td:nth-child(2) {
+    width: 120px;
+  } */
+
+/* .admin-active-order-page-table th:nth-child(3),
+  .admin-active-order-page-table td:nth-child(3) {
+    width: 90px;
+  } */
+
+/* .admin-active-order-page-table th:nth-child(4),
+  .admin-active-order-page-table td:nth-child(4) {
+    width: 110px;
+  } */
+
+/* .admin-active-order-page-table th:nth-child(5),
+  .admin-active-order-page-table td:nth-child(5) {
+    width: 100px;
+  } */
+
+.admin-active-order-page-table th:nth-child(6),
+.admin-active-order-page-table td:nth-child(6) {
+  width: 70px;
+}
+
+.admin-active-order-page-table th:nth-child(7),
+.admin-active-order-page-table td:nth-child(7) {
+  width: 140px;
+}
+
+/* .admin-active-order-page-table th:nth-child(8),
+  .admin-active-order-page-table td:nth-child(8) {
+    width: 100px;
+  } */
+
+/* .admin-active-order-page-table th:nth-child(9),
+  .admin-active-order-page-table td:nth-child(9) {
+    width: 150px;
+  } */
+
+/* .admin-active-order-page-table th:nth-child(10),
+  .admin-active-order-page-table td:nth-child(10) {
+    width: 70px;
+    text-align: center;
+  } */
+
+.admin-active-order-page-delivery-partner {
+  color: #4299e1;
+}
+
+.admin-active-order-page-status-badge {
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 8px;
+  /* font-size: 14px; */
+  font-weight: 500;
+  /* min-width: 100px; */
+  text-align: center;
+}
+
+.admin-active-order-page-status-preparing {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.admin-active-order-page-status-out-for-delivery {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.admin-active-order-page-status-pending {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.admin-active-order-page-status-delivered {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.admin-active-order-page-action-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #4a5568;
+  padding: 4px 8px;
+  width: 100%;
+}
+
+.admin-active-order-page-action-button:hover {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .admin-active-order-page-container {
+    padding: 16px;
+  }
+
+  .admin-active-order-page-table th,
+  .admin-active-order-page-table td {
+    padding: 8px;
+  }
+
+  .admin-active-order-page-status-badge {
+    padding: 4px 8px;
+    font-size: 12px;
+    min-width: 80px;
+  }
+}
+
+/* Dark theme styles */
+.dark .admin-active-order-page-container {
+  background-color: rgb(26, 31, 44);
+  color: #f3f4f6; /* Set default text color for dark mode */
+}
+
+.dark .admin-active-order-page-container h1 {
+  color: #f3f4f6;
+}
+
+.dark .admin-active-order-page-table-container {
+  background-color: #1f2937;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark .admin-active-order-page-table th {
+  background-color: #374151;
+  color: #9ca3af;
+  border-bottom: 1px solid #374151;
+}
+
+.dark .admin-active-order-page-table td {
+  color: #f3f4f6;
+  border-bottom: 1px solid #374151;
+}
+
+.dark .admin-active-order-page-delivery-partner {
+  color: #4299e1; /* Keep the original color */
+}
+
+.dark .admin-active-order-page-status-badge {
+  background-color: #374151;
+  color: #9ca3af;
+}
+
+.dark .admin-active-order-page-action-button {
+  color: #9ca3af;
+}
+
+.dark .admin-active-order-page-action-button:hover {
+  background-color: #374151;
+}
+
+@keyframes AdminActiveOrderSlideInUp {
+  from {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

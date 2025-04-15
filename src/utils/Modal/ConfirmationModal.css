@@ -1,0 +1,173 @@
+/* ConfirmationModal.css */
+
+/* Overlay styling */
+.confirmation-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  animation: confirmation-modal-fadeIn 0.15s ease-out forwards;
+}
+
+.dark .confirmation-modal-overlay {
+  background-color: rgba(26, 31, 44, 0.7); /* Dark background with slight transparency */
+}
+
+/* Modal content */
+.confirmation-modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  width: 400px; /* Adjust width as needed */
+  max-width: 90%;
+  text-align: center;
+  position: relative; /* For positioning the close button */
+  color: #333; /* Default text color */
+}
+
+.dark .confirmation-modal-content {
+  background-color: rgb(26, 31, 44); /* Dark background */
+  color: #f3f4f6; /* Light text color */
+  border: 1px solid #374151; /* Subtle border */
+}
+
+/* Close button */
+.confirmation-modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+.dark .confirmation-modal-close-button {
+  color: #f3f4f6;
+}
+
+/* Icon container */
+.confirmation-modal-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* Red circle with exclamation mark */
+.confirmation-modal-icon {
+  background-color: #f44336; /* Red color */
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Title */
+.confirmation-modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.dark .confirmation-modal-title {
+  color: #f3f4f6;
+}
+
+/* Message */
+.confirmation-modal-message {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.dark .confirmation-modal-message {
+  color: #9ca3af;
+}
+
+/* Buttons container */
+.confirmation-modal-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Delete button */
+.confirmation-modal-button.confirmation-modal-delete {
+  background-color: #f44336; /* Red color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.confirmation-modal-button.confirmation-modal-delete:hover {
+  background-color: #d32f2f;
+}
+
+/* Cancel button */
+.confirmation-modal-button.confirmation-modal-cancel {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition:
+    border-color 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+}
+
+.confirmation-modal-button.confirmation-modal-cancel:hover {
+  border-color: #999;
+}
+
+.dark .confirmation-modal-button.confirmation-modal-cancel {
+  background-color: #1f2937; /* Dark background for cancel */
+  color: #9ca3af; /* Light text for cancel */
+  border-color: #374151; /* Dark border for cancel */
+}
+
+.dark .confirmation-modal-button.confirmation-modal-cancel:hover {
+  border-color: #6b7280;
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+/* Animations */
+@keyframes confirmation-modal-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes confirmation-modal-slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

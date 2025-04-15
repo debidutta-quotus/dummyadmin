@@ -1,0 +1,18 @@
+/* order-countdown-timer.css */
+
+.order-countdown-timer-container {
+  display: flex;
+  align-items: center;
+}
+
+.order-countdown-timer-container svg {
+  margin-right: 4px; /* Adjust as needed */
+}
+
+.order-countdown-timer-time {
+  font-weight: 500; /* Medium font weight */
+}
+
+.order-countdown-timer-time.order-countdown-timer-asap {
+  color: #ef4444; /* Red 500 from Tailwind equivalent */
+}
