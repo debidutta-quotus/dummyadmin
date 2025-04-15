@@ -8,6 +8,7 @@ import RestomLogo from '../../assets/Restominder/Logo.png';
 import Navbar from '../Navbar/Index';
 import SidebarActionButtons from '../UI/SidebarActionButtons/Index';
 import { DashboardNavigation, OrderManagementNavigation, OutletManagementNavigation } from './components/navigations/Index';
+import { handleClickOutside } from './services/handleClickOutside';
 
 interface SidebarProps {
   children: React.ReactNode;
@@ -52,26 +53,16 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   }, [location]);
 
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        submenuRef.current &&
-        outletButtonRef.current &&
-        !submenuRef.current.contains(event.target as Node) &&
-        !outletButtonRef.current.contains(event.target as Node) &&
-        orderSubmenuRef.current &&
-        orderButtonRef.current &&
-        !orderSubmenuRef.current.contains(event.target as Node) &&
-        !orderButtonRef.current.contains(event.target as Node)
-      ) {
-        setOutletSubmenuOpen(false);
-        setOrderSubmenuOpen(false);
-      }
+    const onClick = (event: MouseEvent) => {
+      handleClickOutside(event, 
+        [submenuRef, outletButtonRef, orderSubmenuRef, orderButtonRef],
+        [() => setOutletSubmenuOpen(false), () => setOrderSubmenuOpen(false)]
+      );
     };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+  
+    document.addEventListener('mousedown', onClick);
+    return () => document.removeEventListener('mousedown', onClick);
   }, []);
-
   useEffect(() => {
     if (window.innerWidth <= 768) {
       setCollapsed(true);
