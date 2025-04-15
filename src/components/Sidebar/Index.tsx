@@ -3,11 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
 import './Sidebar.css';
-import {
-  ShoppingBag,
-  PanelRightOpen,
-  PanelRightClose,
-} from 'lucide-react';
+import { ShoppingBag, PanelRightOpen, PanelRightClose } from 'lucide-react';
 import RestomLogo from '../../assets/Restominder/Logo.png';
 import Navbar from '../Navbar/Index';
 import SidebarActionButtons from '../UI/SidebarActionButtons/Index';
@@ -114,8 +110,6 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  
-
   const isOrderActive =
     location.pathname === '/admin/active-orders' || location.pathname === '/admin/order-history';
 
@@ -142,7 +136,10 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
         <nav className="sidebar-component-nav">
           <ul className="sidebar-component-nav-item">
             <DashboardNavigation />
-            <OutletManagementNavigation toggleOutletSubmenu={toggleOutletSubmenu} outletSubmenuOpen={outletSubmenuOpen} />
+            <OutletManagementNavigation
+              toggleOutletSubmenu={toggleOutletSubmenu}
+              outletSubmenuOpen={outletSubmenuOpen}
+            />
             {/* <li>
               <NavLink
                 to="/menus"

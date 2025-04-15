@@ -10,10 +10,37 @@ const OrdersPage = lazy(() => import('../pages/OrdersPage/Index'));
 
 export const RestoRoutes = (
   <Route element={<ProtectedRoutes />}>
-    <Route element={<Sidebar><Outlet /></Sidebar>}>
-      <Route path="/menu" element={<SuspenseWrapper><MenuServices /></SuspenseWrapper>} />
-      <Route path="/menus" element={<SuspenseWrapper><MenuPageNew /></SuspenseWrapper>} />
-      <Route path="/orders" element={<SuspenseWrapper><OrdersPage /></SuspenseWrapper>} />
+    <Route
+      element={
+        <Sidebar>
+          <Outlet />
+        </Sidebar>
+      }
+    >
+      <Route
+        path="/menu"
+        element={
+          <SuspenseWrapper>
+            <MenuServices />
+          </SuspenseWrapper>
+        }
+      />
+      <Route
+        path="/menus"
+        element={
+          <SuspenseWrapper>
+            <MenuPageNew />
+          </SuspenseWrapper>
+        }
+      />
+      <Route
+        path="/orders"
+        element={
+          <SuspenseWrapper>
+            <OrdersPage />
+          </SuspenseWrapper>
+        }
+      />
     </Route>
   </Route>
 );

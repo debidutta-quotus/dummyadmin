@@ -9,10 +9,38 @@ const Logout = lazy(() => import('../pages/AuthPage/logout/Index'));
 
 export const StaticRoutes = (
   <>
-    <Route path="/success" element={<SuspenseWrapper><SuccessAnimation /></SuspenseWrapper>} />
-    <Route path="/welcome" element={<SuspenseWrapper><WelcomePage /></SuspenseWrapper>} />
+    <Route
+      path="/success"
+      element={
+        <SuspenseWrapper>
+          <SuccessAnimation />
+        </SuspenseWrapper>
+      }
+    />
+    <Route
+      path="/welcome"
+      element={
+        <SuspenseWrapper>
+          <WelcomePage />
+        </SuspenseWrapper>
+      }
+    />
     <Route path="/" element={<Navigate to="/login" replace />} />
-    <Route path="*" element={<SuspenseWrapper><NotFound /></SuspenseWrapper>} />
-    <Route path="/logout" element={<SuspenseWrapper><Logout /></SuspenseWrapper>} />
+    <Route
+      path="*"
+      element={
+        <SuspenseWrapper>
+          <NotFound />
+        </SuspenseWrapper>
+      }
+    />
+    <Route
+      path="/logout"
+      element={
+        <SuspenseWrapper>
+          <Logout />
+        </SuspenseWrapper>
+      }
+    />
   </>
 );

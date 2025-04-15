@@ -60,7 +60,7 @@
 
 /* Apply to both scrollbars by default */
 .table-container::-webkit-scrollbar {
-  width: 6px;  /* thickness for vertical scrollbar */
+  width: 6px; /* thickness for vertical scrollbar */
   height: 6px; /* thickness for horizontal scrollbar */
 }
 
@@ -91,7 +91,6 @@
 .dark .table-container::-webkit-scrollbar-thumb:hover {
   background: #6b7280;
 }
-
 
 .status-badge {
   padding: 4px 12px;

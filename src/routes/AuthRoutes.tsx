@@ -9,8 +9,29 @@ const StoreRegister = lazy(() => import('../pages/StoreRegisterPage/Index'));
 
 export const AuthRoutes = (
   <Route element={<AuthRoutesGuard />}>
-    <Route path="/signup" element={<SuspenseWrapper><Signup /></SuspenseWrapper>} />
-    <Route path="/login" element={<SuspenseWrapper><Login /></SuspenseWrapper>} />
-    <Route path="/register" element={<SuspenseWrapper><StoreRegister /></SuspenseWrapper>} />
+    <Route
+      path="/signup"
+      element={
+        <SuspenseWrapper>
+          <Signup />
+        </SuspenseWrapper>
+      }
+    />
+    <Route
+      path="/login"
+      element={
+        <SuspenseWrapper>
+          <Login />
+        </SuspenseWrapper>
+      }
+    />
+    <Route
+      path="/register"
+      element={
+        <SuspenseWrapper>
+          <StoreRegister />
+        </SuspenseWrapper>
+      }
+    />
   </Route>
 );
