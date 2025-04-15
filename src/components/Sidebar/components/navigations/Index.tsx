@@ -66,43 +66,42 @@ export const OutletManagementNavigation = ({
 };
 
 interface OrderManagementNavigationProps {
-    isOrderActive: boolean;
-    orderSubmenuOpen: boolean;
-    toggleOrderSubmenu: (e: React.MouseEvent<HTMLDivElement>) => void;
-  }
-  
-
-export const OrderManagementNavigation = ( {isOrderActive, orderSubmenuOpen, toggleOrderSubmenu} : OrderManagementNavigationProps ) => {
-      const orderButtonRef = useRef<HTMLDivElement>(null);
-        const orderSubmenuRef = useRef<HTMLDivElement>(null);
-      
-    
-    return (
-        <li className="sidebar-submenu-container">
-              <div
-                ref={orderButtonRef}
-                className={`sidebar-component-nav-link ${isOrderActive ? 'active' : ''}`}
-                onClick={toggleOrderSubmenu}
-              >
-                <span className="sidebar-component-icon">
-                  <ShoppingBag size={20} />
-                </span>
-                <span className="sidebar-component-nav-text">Order Management</span>
-              </div>
-              <div
-                ref={orderSubmenuRef}
-                className={`sidebar-submenu ${orderSubmenuOpen ? 'open' : ''}`}
-              >
-                <div className="submenu-line"></div>
-                <NavLink to="/admin/active-orders" className="submenu-item">
-                  <span className="submenu-dot"></span>
-                  <span className="sidebar-component-nav-text">Active Orders</span>
-                </NavLink>
-                <NavLink to="/admin/order-history" className="submenu-item">
-                  <span className="submenu-dot"></span>
-                  <span className="sidebar-component-nav-text">Order History</span>
-                </NavLink>
-              </div>
-            </li>
-    )
+  isOrderActive: boolean;
+  orderSubmenuOpen: boolean;
+  toggleOrderSubmenu: (e: React.MouseEvent<HTMLDivElement>) => void;
 }
+
+export const OrderManagementNavigation = ({
+  isOrderActive,
+  orderSubmenuOpen,
+  toggleOrderSubmenu,
+}: OrderManagementNavigationProps) => {
+  const orderButtonRef = useRef<HTMLDivElement>(null);
+  const orderSubmenuRef = useRef<HTMLDivElement>(null);
+
+  return (
+    <li className="sidebar-submenu-container">
+      <div
+        ref={orderButtonRef}
+        className={`sidebar-component-nav-link ${isOrderActive ? 'active' : ''}`}
+        onClick={toggleOrderSubmenu}
+      >
+        <span className="sidebar-component-icon">
+          <ShoppingBag size={20} />
+        </span>
+        <span className="sidebar-component-nav-text">Order Management</span>
+      </div>
+      <div ref={orderSubmenuRef} className={`sidebar-submenu ${orderSubmenuOpen ? 'open' : ''}`}>
+        <div className="submenu-line"></div>
+        <NavLink to="/admin/active-orders" className="submenu-item">
+          <span className="submenu-dot"></span>
+          <span className="sidebar-component-nav-text">Active Orders</span>
+        </NavLink>
+        <NavLink to="/admin/order-history" className="submenu-item">
+          <span className="submenu-dot"></span>
+          <span className="sidebar-component-nav-text">Order History</span>
+        </NavLink>
+      </div>
+    </li>
+  );
+};

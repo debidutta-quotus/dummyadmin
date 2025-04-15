@@ -7,7 +7,11 @@ import { PanelRightOpen, PanelRightClose } from 'lucide-react';
 import RestomLogo from '../../assets/Restominder/Logo.png';
 import Navbar from '../Navbar/Index';
 import SidebarActionButtons from '../UI/SidebarActionButtons/Index';
-import { DashboardNavigation, OrderManagementNavigation, OutletManagementNavigation } from './components/navigations/Index';
+import {
+  DashboardNavigation,
+  OrderManagementNavigation,
+  OutletManagementNavigation,
+} from './components/navigations/Index';
 import { handleClickOutside } from './utils/handleClickOutside';
 
 interface SidebarProps {
@@ -54,15 +58,17 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
 
   useEffect(() => {
     const onClick = (event: MouseEvent) => {
-      handleClickOutside(event, 
+      handleClickOutside(
+        event,
         [submenuRef, outletButtonRef, orderSubmenuRef, orderButtonRef],
         [() => setOutletSubmenuOpen(false), () => setOrderSubmenuOpen(false)]
       );
     };
-  
+
     document.addEventListener('mousedown', onClick);
     return () => document.removeEventListener('mousedown', onClick);
   }, []);
+
   useEffect(() => {
     if (window.innerWidth <= 768) {
       setCollapsed(true);
