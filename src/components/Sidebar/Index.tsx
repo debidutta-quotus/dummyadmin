@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store';
 import './Sidebar.css';
-import { ShoppingBag, PanelRightOpen, PanelRightClose } from 'lucide-react';
+import { PanelRightOpen, PanelRightClose } from 'lucide-react';
 import RestomLogo from '../../assets/Restominder/Logo.png';
 import Navbar from '../Navbar/Index';
 import SidebarActionButtons from '../UI/SidebarActionButtons/Index';
-import { DashboardNavigation, OutletManagementNavigation } from './components/navigations/Index';
+import { DashboardNavigation, OrderManagementNavigation, OutletManagementNavigation } from './components/navigations/Index';
 
 interface SidebarProps {
   children: React.ReactNode;
@@ -140,71 +140,11 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
               toggleOutletSubmenu={toggleOutletSubmenu}
               outletSubmenuOpen={outletSubmenuOpen}
             />
-            {/* <li>
-              <NavLink
-                to="/menus"
-                className={({ isActive }) =>
-                  `sidebar-component-nav-link ${isActive ? 'active' : ''}`
-                }
-              >
-                <span className="sidebar-component-icon">
-                  <Clipboard size={20} />
-                </span>
-                <span className="sidebar-component-nav-text">Menu Management</span>
-              </NavLink>
-            </li> */}
-            <li className="sidebar-submenu-container">
-              <div
-                ref={orderButtonRef}
-                className={`sidebar-component-nav-link ${isOrderActive ? 'active' : ''}`}
-                onClick={toggleOrderSubmenu}
-              >
-                <span className="sidebar-component-icon">
-                  <ShoppingBag size={20} />
-                </span>
-                <span className="sidebar-component-nav-text">Order Management</span>
-              </div>
-              <div
-                ref={orderSubmenuRef}
-                className={`sidebar-submenu ${orderSubmenuOpen ? 'open' : ''}`}
-              >
-                <div className="submenu-line"></div>
-                <NavLink to="/admin/active-orders" className="submenu-item">
-                  <span className="submenu-dot"></span>
-                  <span className="sidebar-component-nav-text">Active Orders</span>
-                </NavLink>
-                <NavLink to="/admin/order-history" className="submenu-item">
-                  <span className="submenu-dot"></span>
-                  <span className="sidebar-component-nav-text">Order History</span>
-                </NavLink>
-              </div>
-            </li>
-            {/* <li>
-              <NavLink
-                to="/menu"
-                className={({ isActive }) =>
-                  `sidebar-component-nav-link ${isActive ? 'active' : ''}`
-                }
-              >
-                <span className="sidebar-component-icon">
-                  <Clipboard size={20} />
-                </span>
-                <span className="sidebar-component-nav-text">Menu Services</span>
-              </NavLink>
-            </li> */}
-            {/* <li>
-              <NavLink
-                to="/orders"
-                className={({ isActive }) =>
-                  `sidebar-component-nav-link ${isActive ? 'active' : ''}`
-                }
-              >
-                <span className="sidebar-component-icon">
-                  <Utensils size={20} />
-                </span>
-                <span className="sidebar-component-nav-text">Orders</span>
-              </NavLink>
-            </li> */}
+            <OrderManagementNavigation
+              isOrderActive={isOrderActive}
+              orderSubmenuOpen={orderSubmenuOpen}
+              toggleOrderSubmenu={toggleOrderSubmenu}
+            />
           </ul>
           <div className="sidebar-mobile-actions">
             <SidebarActionButtons setCollapsed={setCollapsed} />
