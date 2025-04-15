@@ -8,7 +8,7 @@ import RestomLogo from '../../assets/Restominder/Logo.png';
 import Navbar from '../Navbar/Index';
 import SidebarActionButtons from '../UI/SidebarActionButtons/Index';
 import { DashboardNavigation, OrderManagementNavigation, OutletManagementNavigation } from './components/navigations/Index';
-import { handleClickOutside } from './services/handleClickOutside';
+import { handleClickOutside } from './utils/handleClickOutside';
 
 interface SidebarProps {
   children: React.ReactNode;
